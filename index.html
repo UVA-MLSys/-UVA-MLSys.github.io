@@ -105,44 +105,37 @@
                 margin-bottom: 20px; /* Space between rows */
                 padding: 1% 0; /* Padding top and bottom for each row */
             }
-    
+
             .collaborator {
                 width: 14%;  /* Reduced size of the photos */
-                padding-top: 14%;  /* Reduced size of the photos */
-                border-radius: 50%;
-                overflow: hidden;
                 margin: 1% 6.5%;  /* Adjusted margins to keep them evenly spaced */
                 position: relative;
                 transition: box-shadow 0.3s; 
                 background-color: transparent; 
+                text-align: center; /* Center text under images */
             }
-    
+
             .collaborator img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                width: 180px; /* Set the desired width */
+                height: 200px; /* Set the desired height */
+                border-radius: 50%; /* Make the image circular */
+                object-fit: cover; /* Ensure the image covers the container */
+                object-position: center; /* Center the image within the container */
             }
-    
+
+            .collaborator-info {
+                margin-top: 10px; /* Space between image and text */
+            }
+
             .collaborator-name {
-                position: absolute;
-                bottom: 10%; /* Position the name near the bottom */
-                left: 50%;
-                transform: translateX(-50%); /* Center the name horizontally */
-                background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-                padding: 5px 10px;
-                border-radius: 10px;
-                visibility: hidden; /* Initially hidden */
-                transition: visibility 0.3s, opacity 0.3s linear; /* Smooth transition for visibility and opacity */
+                font-weight: bold;
             }
-    
-            .collaborator:hover .collaborator-name {
-                visibility: visible;
-                opacity: 1; /* Show the name on hover */
+
+            .collaborator-details {
+                font-size: 0.9em; /* Slightly smaller text for additional info */
+                color: #666; /* Grey color for additional info */
             }
-    
+
             .collaborators-row:nth-child(odd) {
                 background-color: #d6d6d6; /* Different shade for alternating rows */
             }
@@ -324,66 +317,104 @@
                 <div class="collaborator">
                     <img src="./pics/img/Nicholas Kellogg.png" alt="Nicholas Kellogg">
                     <div class="collaborator-name">Nicholas Kellogg</div>
+                    <div class="collaborator-details">DS and Economics</div>
+                </div>
+                <div class="collaborator">
+                    <img src="./pics/img/Max Titov.JPG" alt="Maxim Titov">
+                    <div class="collaborator-name">Maxim Titov</div>
+                    <div class="collaborator-details">Computer Engineering and Circuits</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/1594479822284 - George Boulos.jpg" alt="George Boulos">
                     <div class="collaborator-name">George Boulos</div>
+                    <div class="collaborator-details">Systems Engineering</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/headshot - Andrej Erkelens.jpeg" alt="Andrej Erkelens">
                     <div class="collaborator-name">Andrej Erkelens</div>
+                    <div class="collaborator-details">DS (Master's)</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/IMG-1170 - Luke Benham.jpg" alt="Luke Benham">
                     <div class="collaborator-name">Luke Benham</div>
+                    <div class="collaborator-details">CS (Master's)</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/JFox2 - Judy Fox.png" alt="Judy Fox">
                     <div class="collaborator-name">Dr. Judy Fox</div>
+                    <div class="collaborator-details">DS, CS (Professor)</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/IMG_8110 - Tracy Hua.jpg" alt="Tracy Hua">
                     <div class="collaborator-name">Tracy Hua</div>
+                    <div class="collaborator-details">Systems Engineering, DS</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/IMG_9715 - Ian Liu.PNG" alt="Yingzheng Liu">
                     <div class="collaborator-name">Yingzheng Liu</div>
+                    <div class="collaborator-details">CS (PhD)</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/wzg6 - Zhengguang Wang.png" alt="Zhengguang Wang">
                     <div class="collaborator-name">Zhengguang Wang</div>
+                    <div class="collaborator-details">CS, Statistics</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/timothy sue headshot.jpg" alt="Timothy Sue">
                     <div class="collaborator-name">Timothy Sue</div>
+                    <div class="collaborator-details">CS, Applied Mathematics</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/IMG_0343 - Kingsley Kim.JPG" alt="Kingsley Kim">
                     <div class="collaborator-name">Kingsley Kim</div>
+                    <div class="collaborator-details">CS, Physics, Astronomy</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/ID Photo UVA - Ayush Karmacharya.PNG" alt="Ayush Karmacharya">
                     <div class="collaborator-name">Ayush Karmacharya</div>
+                    <div class="collaborator-details">CS, Economics</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/Mia Yuan.png" alt="Mia Yuan">
                     <div class="collaborator-name">Mia Yuan</div>
+                    <div class="collaborator-details">DS (PhD)</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/Shamsul Rauf Haque.png" alt="Shamsul Haque">
                     <div class="collaborator-name">Shamsul Haque</div>
+                    <div class="collaborator-details">CS</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/single - Md Khairul Islam.JPG" alt="Khairul Islam">
                     <div class="collaborator-name">Md Khairul Islam</div>
+                    <div class="collaborator-details">CS (PhD)</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/NickProfile - Nicholas Daniello.png" alt="Nicholas Daniello">
                     <div class="collaborator-name">Nicholas Daniello</div>
+                    <div class="collaborator-details">DS (Master's)</div>
                 </div>
                 <div class="collaborator">
                     <img src="./pics/img/Aparna - Aparna Marathe.jpg" alt="Aparna Marathe">
                     <div class="collaborator-name">Aparna Marathe</div>
+                    <div class="collaborator-details">DS (Master's)</div>
+                </div>
+                <div class="collaborator">
+                    <img src="./pics/img/" alt="Xin Sun">
+                    <div class="collaborator-name">Xin Sun</div>
+                    <div class="collaborator-details">CS</div>
+                </div>
+                <div class="collaborator">
+                    <img src="./pics/img/" alt="Preetham Minchu">
+                    <div class="collaborator-name">Preetham Minchu</div>
+                    <div class="collaborator-details">Finance</div>
+                </div>
+                <div class="collaborator">
+                    <img src="./pics/img/" alt="Ryan Goudjil">
+                    <div class="collaborator-name">Ryan Goudjil</div>
+                    <div class="collaborator-details">CS, Chemistry</div>
+                </div>
+                <div class="collaborator">
                 </div>
             </div>
             <h2 id="awards">Awards</h2>
