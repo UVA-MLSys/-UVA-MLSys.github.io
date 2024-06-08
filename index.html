@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interpretable AI for Time-Series Models</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!DOCTYPE html>
     <html lang="en">
     
@@ -213,20 +214,122 @@
                 transform: scaleX(1);
             }
 
-            /* Hero Section */
+            /* Slideshow container */
+            .slideshow-container {
+                position: relative;
+                margin: auto;
+                max-width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /* Hide all slides by default */
+            .mySlides {
+                display: none;
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                color: #181818;
+                border-radius: 3px 0 0 3px;
+            }
+
+            .prev {
+                left: 0;
+                color:#181818;  
+            }
+
+            /* On hover, add a black background color with a little bit of transparency */
+            .prev:hover, .next:hover {
+                background-color: rgba(0, 0, 0, 0.829);
+                color: white;
+            }
+
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* Dots */
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+
+            /* Adjust the hero section to better accommodate the slideshow */
             #hero {
                 background-image: url(./pics/img/covidthing.jpg);
-                background-size: cover;  /* This will make the image cover the entire container */
-                background-position: center;  /* This will center the image */
-                background-repeat: no-repeat;  /* Ensure the image doesn't repeat */
+                background-size: cover;  
+                background-position: center;  
+                background-repeat: no-repeat;  
                 position: relative;
                 z-index: 1;
-                padding: 60px 0;  /* Adjust this as needed */
+                padding: 60px 0;
             }
 
             #hero .container {
-                padding-top: 150px;
-                min-height: 50vh;
+                min-height: 70vh;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
@@ -249,7 +352,7 @@
                 width: fit-content;
                 font-size: 4rem;
                 position: relative;
-                /* color: white;  */
+                color: white;
                 font-family: 'Inconsolata', sans-serif;
             }
     </style>
@@ -271,20 +374,79 @@
     
     <section id="hero">
         <div class="container">
-            <h1>Interpretable AI for Time-Series Models</h1>
-            <h2>AI For Science</h2>
-            <p class="introduction">"AI for Science" is a new program Prof. Judy Fox co-hosted in the summer of 2023, which was funded by NSF Cyber Training. 
-                It continued in fall 2023.  Eleven undergraduate students were involved in their "AI for Science" research in the fall 2023 semester. 
-                The overarching goal is to advance “AI for Science” with highlights on public health and responsible AI infrastructure. 
-                The undergraduate students engaged in real-time machine learning efforts for interdisciplinary applications, including NSF-funded work in the Global Pervasive Computational Epidemiology computer expedition. 
-                Another team science area is to use transformational AI advancements for earthquakes and financial aid. 
-                We are building a community at the University of Virginia to engage and inspire students into leaders and pioneers who understand the foundations and practical applications of data and science across various domains.</p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./pics/img/slide1.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./pics/img/slide2.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./pics/img/slide3.png" style="width:100%">
+                </div>
+                <!-- Add more slides as needed -->
+
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- Dots for navigation -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <!-- Add more dots as needed -->
+            </div>
         </div>
     </section>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <div class="container">
+        <h1 id="title">Mission Statement</h1>
+        <p class="introduction">
+            "AI for Science" is a new program Prof. Judy Fox co-hosted in the summer of 2023, which was funded by NSF Cyber Training. 
+            It continued in fall 2023.  Eleven undergraduate students were involved in their "AI for Science" research in the fall 2023 semester. 
+            The overarching goal is to advance “AI for Science” with highlights on public health and responsible AI infrastructure. 
+            The undergraduate students engaged in real-time machine learning efforts for interdisciplinary applications, including NSF-funded work in the Global Pervasive Computational Epidemiology computer expedition. 
+            Another team science area is to use transformational AI advancements for earthquakes and financial aid. 
+            We are building a community at the University of Virginia to engage and inspire students into leaders and pioneers who understand the foundations and practical applications of data and science across various domains.
+        </p>
+    </div>
     
     <div class="container">
         <h1 id="title">Interpretable AI for Time-Series Models</h1>
-
         <!-- Projects Row -->
         <div class="row" id="projects">
             <div class="card">
@@ -323,7 +485,7 @@
 
         <!-- Contributors, Awards, Publications -->
         <div class="bottom-section">
-            <h2 id="contributors">Contributors</h2>
+            <h1 id="title">Contributors</h2>
             <div class="collaborators-row">
                 <div class="collaborator">
                     <img src="./pics/img/Nicholas Kellogg.png" alt="Nicholas Kellogg">
