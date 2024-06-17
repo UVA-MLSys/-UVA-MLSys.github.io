@@ -356,6 +356,13 @@
                 color: white;
                 font-family: 'Inconsolata', sans-serif;
             }
+            .publication {
+                font-size: medium;
+            }
+
+            .award {
+                font-size: medium;
+            }
     </style>
 </head>
 <body>
@@ -385,6 +392,9 @@
                 <div class="mySlides fade">
                     <img src="./pics/img/slide3.png" style="width:100%">
                 </div>
+                <div class="mySlides fade">
+                    <img src="./pics/img/slide4.png" style="width:60%">
+                </div>
                 <!-- Add more slides as needed -->
 
                 <!-- Navigation buttons -->
@@ -397,7 +407,8 @@
             <div style="text-align:center">
                 <span class="dot" onclick="currentSlide(1)"></span> 
                 <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>  
                 <!-- Add more dots as needed -->
             </div>
         </div>
@@ -486,7 +497,7 @@
 
         <!-- Contributors, Awards, Publications -->
         <div class="bottom-section">
-            <h1 id="title">Contributors</h2>
+            <h1 id="contributors" class="title">Contributors</h2>
             <div class="collaborators-row">
                 <div class="collaborator">
                     <img src="./pics/img/Nicholas Kellogg.png" alt="Nicholas Kellogg">
@@ -591,18 +602,61 @@
                 <div class="collaborator">
                 </div>
             </div>
-            <h2 id="awards">Awards</h2>
-            <p>Coming Soon...</p>
-            <h2 id="publications">Publications</h2>
-            <p>@INPROCEEDINGS{islam2023interpreting,
-                author={Islam, Md Khairul and Liu, Yingzheng and Erkelens, Andrej and Daniello, Nick and Marathe, Aparna and Fox, Judy},
-                booktitle={2023 IEEE International Conference on Digital Health (ICDH)}, 
-                title={Interpreting County-Level COVID-19 Infections using Transformer and Deep Learning Time Series Models}, 
-                year={2023},
-                volume={},
-                number={},
-                pages={266-277},
-                doi={10.1109/ICDH60066.2023.00046}}</p>
+            <h1 id="awards" class="title">Awards</h2>
+            <p class="award">Third Place prize in the 2023 IEEE ICDH Conference. NSF Student Research Award: <a href="https://conferences.computer.org/icdh/2023/student_awards.html">https://conferences.computer.org/icdh/2023/student_awards.html</a></p>
+            <p class="award">Temporal Dependencies and Spatio-Temporal Patterns of Time Series Models <a href="https://ojs.aaai.org/index.php/AAAI/article/view/30396">https://ojs.aaai.org/index.php/AAAI/article/view/30396</a></p>
+            <p class="award">Validation, Robustness, and Accuracy of Perturbation-Based Sensitivity Analysis Methods for Time-Series Deep Learning Models <a href="https://ojs.aaai.org/index.php/AAAI/article/view/30559">https://ojs.aaai.org/index.php/AAAI/article/view/30559</a></p>
+            <p class="award">Interpreting County-Level COVID-19 Infections using Transformer and Deep Learning Time Series Models in IEEE Library <a href="https://ieeexplore.ieee.org/abstract/document/10224685">https://ieeexplore.ieee.org/abstract/document/10224685</a></p>
+            <h1 id="publications" class="title">Publications</h1>
+            <h3>Referred Journal Article Citations/References</h2>
+            <p class="publication"> <b>K, Liu Y, Erkelens A, Daniello N, Marathe A, Fox J. Interpreting County-Level COVID 19
+                Infections using Transformer and Deep Learning Time Series Models.</b> Proceedings of The IEEE
+                International Conference on Digital Health (ICDH). This work won the NSF Student Research
+                Competition Award (3rd Prize) July 2023. Available from:
+                <a href="https://ieeexplore.ieee.org/abstract/document/10224685">https://ieeexplore.ieee.org/abstract/document/10224685</a>. 2023 July 02; Volume 1(Issue 1): Pages
+                266-277
+            </p> 
+            <p class="publication"> <b>Laszewski G von, Fleische J, Knuuti R, Fox GC, Kolessar , Butler TS, Fox J. Opportunities for
+                enhancing MLCommons efforts while leveraging insights from educational MLCommons
+                earthquake benchmarks efforts.</b> Journal of Frontiers in High-Performance Computing. 2023 October
+                23; 1. Available from: <a href="https://par.nsf.gov/biblio/10473591">https://par.nsf.gov/biblio/10473591</a>.
+            </p>
+            <p class="publication"> <b>Islam K. (Advisor: Judy Fox), Temporal Dependencies and Spatio-Temporal Patterns of Time Series
+                Models</b> Accepted to the AAAI-24 Doctoral Consortium, The 38th Annual AAAI Conference on
+                Artificial Intelligence (AAAI-24), Vancouver, Canada. 2024 February 27.
+            </p> 
+            <p class="publication"> <b>Wang Z. (Advisor: Judy Fox) Validation, Robustness, and Accuracy of Perturbation-based
+                Sensitivity Analysis Methods for Time-Series Deep Learning Models.</b> Accepted to the AAAI-24
+                Undergradaute Consortium. The 38th Annual AAAI Conference on Artificial Intelligence (AAAI-
+                24), Vancouver, Canada.. 2024 February 27.
+            </p> 
+            <p class="publication"> <b>Islam M, Valentine T, Sue T, Karmacharya A, Wang Z, Kim K, Fox J. Interpreting Time Series
+                Transformer Models and Sensitivity Analysis of Population Age Groups to COVID-19 Infections.
+                Accepted to the AI for Time-Series workshop.</b> The 38th Annual AAAI Conference on Artificial
+                Intelligence (AAAI-24), Vancouver, Canada.. 2024 February 27.
+            </p>
+            
+            
+            <h3>Software Packages developed or updated</h3>
+            <p class="publication"> Project: Interpreting County-Level COVID-19 Infections using Transformer and Deep Learning
+                Time Series Models (Github: <a href="https://github.com/Data-ScienceHub/gpce-covid">https://github.com/Data-ScienceHub/gpce-covid</a>)
+            </p>  
+            <p class="publication"> Project: Interpreting Time Series Transformer Models and Sensitivity Analysis of Population Age
+                Groups to COVID-19 Infections (Github: <a href="https://github.com/UVA-MLSys/COVID-19-age-groups">https://github.com/UVA-MLSys/COVID-19-age-groups</a>)
+            </p>  
+            <p class="publication"> Project: HySec-Flow: A Scalable and Secure Framework for Data Intensive Heterogeneous
+                Computing (Github: <a href="https://github.com/UVA-MLSys/HySec-Flow/tree/master/sgx-tasks">https://github.com/UVA-MLSys/HySec-Flow/tree/master/sgx-tasks</a>)
+            </p>  
+            <p class="publication"> Project: Surrogate Simulation for Earthquake Prediction (Github: <a href="https://github.com/UVA-MLSys/SurrogateSimulation">https://github.com/UVA-MLSys/SurrogateSimulation</a>)
+            </p> 
+
+
+            <h3>Additional Research Media Published</h3>
+            <p class="publication"> Talk at the Virginia booth, "Interpretable AI using Transformer and Deep Learning Time-Series
+                Models Sensitivity Analysis for County Level COVID-19 Infections", at The International
+                Conference for High Performance Computing, Networking, Storage, and Analysis (SC'23), Denver,
+                Colorado, November 12–17, 2023,
+            </p>  
         </div>
     </div>
 </body>
