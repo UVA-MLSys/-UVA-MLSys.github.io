@@ -364,6 +364,7 @@
 
             .award {
                 font-size: medium;
+                
             }
             /* General box styles for both awards and publications */
             .award-box, .publication-box {
@@ -385,11 +386,11 @@
 
             /* Logo styles */
             .box-logo {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
+                width: auto;
+                height: auto;
                 object-fit: cover;
                 margin-bottom: 15px;
+                max-width: 300px;
             }
 
             /* Content styles */
@@ -461,6 +462,10 @@
                 <div class="mySlides fade">
                     <img src="./pics/img/slide4.png" style="width:60%">
                 </div>
+                <div class="mySlides fade">
+                    <img src="./pics/img/slide5.jpg" style="width:60%">
+                </div>
+                
                 <!-- Add more slides as needed -->
 
                 <!-- Navigation buttons -->
@@ -474,7 +479,8 @@
                 <span class="dot" onclick="currentSlide(1)"></span> 
                 <span class="dot" onclick="currentSlide(2)"></span> 
                 <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>  
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>    
                 <!-- Add more dots as needed -->
             </div>
         </div>
@@ -557,7 +563,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/ref11GvSm4w" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="video-card">
-                Video Placeholder 2
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/J1LW2DPxuzM" title="Judy Fox, University of Virginia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="video-card">
                 Video Placeholder 3
@@ -676,28 +682,28 @@
                 <div class="section-container">
                     <div class="row">
                         <div class="award-box">
-                            <img src="path-to-logo1.jpg" alt="Award Logo 1" class="box-logo">
+                            <img src="/pics/img/nsf.png" alt="Award Logo 1" class="box-logo">
                             <div class="box-content">
                                 <h2>Third Place prize in the 2023 IEEE ICDH Conference</h2>
                                 <p>NSF Student Research Award: <a href="https://conferences.computer.org/icdh/2023/student_awards.html">Link</a></p>
                             </div>
                         </div>
                         <div class="award-box">
-                            <img src="path-to-logo2.jpg" alt="Award Logo 2" class="box-logo">
+                            <img src="/pics/img/nsfproceedings.png" alt="Award Logo 2" class="box-logo">
                             <div class="box-content">
                                 <h2>Temporal Dependencies and Spatio-Temporal Patterns of Time Series Models</h2>
                                 <p><a href="https://ojs.aaai.org/index.php/AAAI/article/view/30396">Link</a></p>
                             </div>
                         </div>
                         <div class="award-box">
-                            <img src="path-to-logo3.jpg" alt="Award Logo 3" class="box-logo">
+                            <img src="/pics/img/nsfproceedings.png" alt="Award Logo 3" class="box-logo">
                             <div class="box-content">
                                 <h2>Validation, Robustness, and Accuracy of Perturbation-Based Sensitivity Analysis Methods for Time-Series Deep Learning Models</h2>
                                 <p><a href="https://ojs.aaai.org/index.php/AAAI/article/view/30559">Link</a></p>
                             </div>
                         </div>
                         <div class="award-box">
-                            <img src="path-to-logo4.jpg" alt="Award Logo 4" class="box-logo">
+                            <img src="/pics/img/ieee.png" alt="Award Logo 4" class="box-logo">
                             <div class="box-content">
                                 <h2>Interpreting County-Level COVID-19 Infections using Transformer and Deep Learning Time Series Models in IEEE Library</h2>
                                 <p><a href="https://ieeexplore.ieee.org/abstract/document/10224685">Link</a></p>
@@ -711,35 +717,35 @@
                 <div class="section-container">
                     <div class="row">
                         <div class="publication-box">
-                            <img src="path-to-logo1.jpg" alt="Publication Logo 1" class="box-logo">
+                            <img src="/pics/img/interpretingSA.png" alt="Publication Logo 1" class="box-logo">
                             <div class="box-content">
                                 <h2>Interpreting County-Level COVID 19 Infections using Transformer and Deep Learning Time Series Models</h2>
                                 <p>Proceedings of The IEEE International Conference on Digital Health (ICDH). This work won the NSF Student Research Competition Award (3rd Prize) July 2023. Available from: <a href="https://ieeexplore.ieee.org/abstract/document/10224685">Link</a>. 2023 July 02; Volume 1(Issue 1): Pages 266-277</p>
                             </div>
                         </div>
                         <div class="publication-box">
-                            <img src="path-to-logo2.jpg" alt="Publication Logo 2" class="box-logo">
+                            <img src="/pics/img/opportunitiespaper.png" alt="Publication Logo 2" class="box-logo">
                             <div class="box-content">
                                 <h2>Opportunities for enhancing MLCommons efforts while leveraging insights from educational MLCommons earthquake benchmarks efforts</h2>
                                 <p>Journal of Frontiers in High-Performance Computing. 2023 October 23; 1. Available from: <a href="https://par.nsf.gov/biblio/10473591">Link</a>.</p>
                             </div>
                         </div>
                         <div class="publication-box">
-                            <img src="path-to-logo3.jpg" alt="Publication Logo 3" class="box-logo">
+                            <img src="/pics/img/temporal.png" alt="Publication Logo 3" class="box-logo">
                             <div class="box-content">
                                 <h2>Temporal Dependencies and Spatio-Temporal Patterns of Time Series Models</h2>
                                 <p>Accepted to the AAAI-24 Doctoral Consortium, The 38th Annual AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada. 2024 February 27.</p>
                             </div>
                         </div>
                         <div class="publication-box">
-                            <img src="path-to-logo4.jpg" alt="Publication Logo 4" class="box-logo">
+                            <img src="/pics/img/validationpaper.png" alt="Publication Logo 4" class="box-logo">
                             <div class="box-content">
                                 <h2>Validation, Robustness, and Accuracy of Perturbation-based Sensitivity Analysis Methods for Time-Series Deep Learning Models</h2>
                                 <p>Accepted to the AAAI-24 Undergraduate Consortium. The 38th Annual AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada. 2024 February 27.</p>
                             </div>
                         </div>
                         <div class="publication-box">
-                            <img src="path-to-logo5.jpg" alt="Publication Logo 5" class="box-logo">
+                            <img src="/pics/img/interpretingSA2.png" alt="Publication Logo 5" class="box-logo">
                             <div class="box-content">
                                 <h2>Interpreting Time Series Transformer Models and Sensitivity Analysis of Population Age Groups to COVID-19 Infections</h2>
                                 <p>Accepted to the AI for Time-Series workshop. The 38th Annual AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada. 2024 February 27.</p>
@@ -752,28 +758,28 @@
                 <div class="section-container">
                     <div class="row">
                         <div class="publication-box">
-                            <img src="path-to-logo6.jpg" alt="Software Package Logo 1" class="box-logo">
+                            <img src="/pics/img/gpcegit.png" alt="Software Package Logo 1" class="box-logo">
                             <div class="box-content">
                                 <h2>Interpreting County-Level COVID-19 Infections using Transformer and Deep Learning Time Series Models</h2>
                                 <p>Github: <a href="https://github.com/Data-ScienceHub/gpce-covid">Link</a></p>
                             </div>
                         </div>
                         <div class="publication-box">
-                            <img src="path-to-logo7.jpg" alt="Software Package Logo 2" class="box-logo">
+                            <img src="/pics/img/covidgit.png" alt="Software Package Logo 2" class="box-logo">
                             <div class="box-content">
                                 <h2>Interpreting Time Series Transformer Models and Sensitivity Analysis of Population Age Groups to COVID-19 Infections</h2>
                                 <p>Github: <a href="https://github.com/UVA-MLSys/COVID-19-age-groups">Link</a></p>
                             </div>
                         </div>
                         <div class="publication-box">
-                            <img src="path-to-logo8.jpg" alt="Software Package Logo 3" class="box-logo">
+                            <img src="/pics/img/Hysecgit.png" alt="Software Package Logo 3" class="box-logo">
                             <div class="box-content">
                                 <h2>HySec-Flow: A Scalable and Secure Framework for Data Intensive Heterogeneous Computing</h2>
                                 <p>Github: <a href="https://github.com/UVA-MLSys/HySec-Flow/tree/master/sgx-tasks">Link</a></p>
                             </div>
                         </div>
                         <div class="publication-box">
-                            <img src="path-to-logo9.jpg" alt="Software Package Logo 4" class="box-logo">
+                            <img src="/pics/img/surrogategit.png" alt="Software Package Logo 4" class="box-logo">
                             <div class="box-content">
                                 <h2>Surrogate Simulation for Earthquake Prediction</h2>
                                 <p>Github: <a href="https://github.com/UVA-MLSys/SurrogateSimulation">Link</a></p>
@@ -786,7 +792,7 @@
                 <div class="section-container">
                     <div class="row">
                         <div class="publication-box">
-                            <img src="path-to-logo10.jpg" alt="Research Media Logo" class="box-logo">
+                            <img src="/pics/img/slide4.png" alt="Research Media Logo" class="box-logo">
                             <div class="box-content">
                                 <h2>Talk at the Virginia booth, "Interpretable AI using Transformer and Deep Learning Time-Series Models Sensitivity Analysis for County Level COVID-19 Infections"</h2>
                                 <p>The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC'23), Denver, Colorado, November 12–17, 2023.</p>
