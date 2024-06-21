@@ -39,7 +39,7 @@
             .container {
                 padding-top: 60px;
                 max-width: 1500px;
-                margin: 50px auto;
+                margin: 70px auto;
                 padding: 20px;
                 background-color: #fff;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -54,6 +54,7 @@
             h1, h2 {
                 text-align: center;
                 margin-top: 0;
+                padding-top: 20px;
             }
     
             .row {
@@ -418,6 +419,7 @@
                 display: flex;
                 align-items: center; /* Align items vertically */
                 gap: 10px; /* Optional: Add some space between the logo and the heading */
+                place-content: space-between;
             }
 
             .nsflogo {
@@ -428,6 +430,10 @@
                 margin: 0; /* Remove default margin */
                 display: flex;
                 align-items: center;
+            }
+            .emptybox {
+                width: 100px;
+                height: 50px;
             }
 
     </style>
@@ -521,6 +527,7 @@
         <div class="specialcontainer">
             <img class="nsflogo" src="/pics/img/nsf.png" width="5%" height="auto"/>
             <h1 id="title">Mission Statement</h1>
+            <div class="emptybox"></div>
         </div>
         <p class="introduction">
             "AI for Science" is a new program Prof. Judy Fox co-hosted in the summer of 2023, which was funded by NSF Cyber Training. 
