@@ -68,6 +68,7 @@
                 padding: 20px;
                 margin: 10px;
                 transition: box-shadow 0.3s;
+                font-size: medium;
             }
     
             .card:hover, .video-card:hover {
@@ -544,23 +545,48 @@
         <!-- Projects Row -->
         <div class="row" id="projects">
             <div class="card">
-                <a href="./docs/_build/html/pages/introduction.html" style="display: block; text-decoration: none; color: inherit;">
+                <a href="https://github.com/UVA-MLSys/gpce-covid" style="display: block; text-decoration: none; color: inherit;">
                     <h2>Interpreting Spatio-Temporal patterns with Self-Attention</h2>
-                    <p>This is a brief description of the first project.</p>
+                    <p>
+                        This study uses the <i>Temporal Fusion Transformer</i> to 
+                        forecast COVID-19 infections at the US county level, 
+                        analyzing detailed temporal and spatial patterns from the self-attention to 
+                        achieve superior prediction performance. 
+                        By interpreting the model's learned patterns and 
+                        using 2.5 years of socioeconomic and health data 
+                        from 3,142 counties, this research provides valuable insights 
+                        to aid effective public health decision-making.
+                    </p>
                     <div class="arrow">&rarr;</div>
                 </a>
             </div>
 
             <div class="card">
+                <a href="https://github.com/UVA-MLSys/COVID-19-age-groups" style="display: block; text-decoration: none; color: inherit;"></a>
                 <h2>Interpreting Feature Interactions using Sensitivity Analysis</h2>
-                <p>This is a brief description of the second project.</p>
+                <p> This study uses eight recent local interpretation methods on 
+                    six Transformer-based time series models, 
+                    comparing find the best predictor for COVID-19 
+                    cases using three years of data from 3,142 US counties. When also
+                    predicting the epidemic sensitivity to different age groups and compare the interpreted
+                    sensitivity with ground truth. The framework is also tested on other datasets
+                    for broader applicability.
+                </p>
                 <div class="arrow">&rarr;</div>
+                </a>
             </div>
 
             <div class="card">
-                <h2>Temporal Saliency Analysis</h2>
-                <p>This is a brief description of the third project.</p>
+                <a href="https://github.com/UVA-MLSys/SA-Timeseries" style="display: block; text-decoration: none; color: inherit;"></a>
+                <h2>Windowed Temporal Saliency Analysis for Multi-Horizon Time Series Forecasting</h2>
+                <p> Interpreting time series models is challenging due to the temporal dependencies between 
+                    time steps and the changing significance of input features over time. This addresses these 
+                    challenges by striving to provide clearer explanations of the feature interactions, 
+                    and showcase the practical application of these interpretability techniques using 
+                    real-world datasets and cutting-edge deep learning models.
+                </p>
                 <div class="arrow">&rarr;</div>
+                </a>
             </div>
         </div>
 
