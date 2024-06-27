@@ -400,7 +400,7 @@
                 max-width: 300px;
             }
 
-            .award-box:hover, .publication-box:hover {
+            .award-box:hover {
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             }
 
@@ -525,7 +525,7 @@
         <div class="container">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="./pics/img/slide1.png" style="width:100%">
+                    <img src="./pics/img/slide1.jpg" style="width:80%">
                 </div>
                 <div class="mySlides fade">
                     <img src="./pics/img/slide2.png" style="width:100%">
@@ -589,6 +589,9 @@
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
         }
+        setInterval(function() {
+            plusSlides(1);
+        }, 5000);
     </script>
 
     <div class="container">
@@ -795,6 +798,7 @@
                                     <h2 class="awardlink">Third Place prize in the 2023 IEEE ICDH Conference</h2>
                                 </a>
                                 <div class="collaborator-row">
+                                    <p>Accepted to the IEEE ICDH Conference; Awarded 3rd place. Recipient: Md Khairul Islam</p>
                                     <img src="/pics/img/single - Md Khairul Islam.JPG" alt="Student Photo">
                                     <div class="collaborator-info">
                                         <h3>Md Khairul Islam</h3>
@@ -809,6 +813,14 @@
                                 <a class="awardlink" href="https://ojs.aaai.org/index.php/AAAI/article/view/30396">
                                     <h2 class="awardlink">Temporal Dependencies and Spatio-Temporal Patterns of Time Series Models</h2>
                                 </a>
+                                <div class="collaborator-row">
+                                    <p>Accepted through the AAAI Doctoral Consortium Track. Recipient: Md Khairul Islam</p>
+                                    <img src="/pics/img/single - Md Khairul Islam.JPG" alt="Student Photo">
+                                    <div class="collaborator-info">
+                                        <h3>Md Khairul Islam</h3>
+                                        <p>CS (PhD)</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="award-box">
@@ -816,7 +828,15 @@
                             <div class="box-content">
                                 <a class="awardlink" href="https://ojs.aaai.org/index.php/AAAI/article/view/30559">
                                     <h2 class="awardlink">Validation, Robustness, and Accuracy of Perturbation-Based Sensitivity Analysis Methods for Time-Series Deep Learning Models</h2>
-                                </a>                    
+                                </a> 
+                                <div class="collaborator-row">
+                                    <p>Accepted through the AAAI Undergraduate Consortium. Recipient: Zhengguang Wang</p>
+                                    <img src="/pics/img/wzg6 - Zhengguang Wang.png" alt="Student Photo">
+                                    <div class="collaborator-info">
+                                        <h3>Zhengguang Wang</h3>
+                                        <p>CS (Undergraduate)</p>
+                                    </div>
+                                </div>               
                             </div>
                         </div>
                         <div class="award-box">
@@ -825,6 +845,9 @@
                                 <a class="awardlink" href="https://ieeexplore.ieee.org/abstract/document/10224685">
                                     <h2 class="awardlink">Interpreting County-Level COVID-19 Infections using Transformer and Deep Learning Time Series Models in IEEE Library</h2>
                                 </a>
+                                <div class="collaborator-row">
+                                    <p>Accepted to the 2023 IEEE ICDH Conference and archived in IEEE Xplore. Recipients: Md Khairul Islam, Yingzheng Liu, Andrej Erkelens, Nick Daniello,  and Judy Fox</p>
+                                </div>    
                             </div>
                         </div>
                     </div>
@@ -838,36 +861,47 @@
                         <div class="publication-box">
                             <img src="/pics/img/interpretingSA.png" alt="Publication Logo 1" class="box-logo">
                             <div class="box-content">
-                                <h2>Interpreting County-Level COVID 19 Infections using Transformer and Deep Learning Time Series Models</h2>
+                                <a class="awardlink" href="https://ieeexplore.ieee.org/abstract/document/10224685">
+                                    <h2>Interpreting County-Level COVID 19 Infections using Transformer and Deep Learning Time Series Models</h2>
+                                </a>
                                 <p>Proceedings of The IEEE International Conference on Digital Health (ICDH). This work won the NSF Student Research Competition Award (3rd Prize) July 2023. Available from: <a href="https://ieeexplore.ieee.org/abstract/document/10224685">Link</a>. 2023 July 02; Volume 1(Issue 1): Pages 266-277</p>
                             </div>
                         </div>
                         <div class="publication-box">
                             <img src="/pics/img/opportunitiespaper.png" alt="Publication Logo 2" class="box-logo">
                             <div class="box-content">
-                                <h2>Opportunities for enhancing MLCommons efforts while leveraging insights from educational MLCommons earthquake benchmarks efforts</h2>
-                                <p>Journal of Frontiers in High-Performance Computing. 2023 October 23; 1. Available from: <a href="https://par.nsf.gov/biblio/10473591">Link</a>.</p>
+                                <a class="awardlink" href="https://par.nsf.gov/biblio/10473591">
+                                    <h2>Opportunities for enhancing MLCommons efforts while leveraging insights from educational MLCommons earthquake benchmarks efforts</h2>
+                                </a>
+                                <p>Journal of Frontiers in High-Performance Computing. Located in the NSF Public Access Repository. 2023 October 23</p>
                             </div>
                         </div>
                         <div class="publication-box">
                             <img src="/pics/img/temporal.png" alt="Publication Logo 3" class="box-logo">
                             <div class="box-content">
-                                <h2>Temporal Dependencies and Spatio-Temporal Patterns of Time Series Models</h2>
-                                <p>Accepted to the AAAI-24 Doctoral Consortium, The 38th Annual AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada. 2024 February 27. Available from: <a href="https://ojs.aaai.org/index.php/AAAI/article/view/30396">Link</a>.</p>
+                                <a class="awardlink" href="https://ojs.aaai.org/index.php/AAAI/article/view/30396">
+                                    <h2>Temporal Dependencies and Spatio-Temporal Patterns of Time Series Models</h2>
+                                </a>
+                                
+                                <p>Accepted to the AAAI-24 Doctoral Consortium, The 38th Annual AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada. 2024 February 27.</p>
                             </div>
                         </div>
                         <div class="publication-box">
                             <img src="/pics/img/validationpaper.png" alt="Publication Logo 4" class="box-logo">
                             <div class="box-content">
-                                <h2>Validation, Robustness, and Accuracy of Perturbation-based Sensitivity Analysis Methods for Time-Series Deep Learning Models</h2>
-                                <p>Accepted to the AAAI-24 Undergraduate Consortium. The 38th Annual AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada. 2024 February 27. Available from: <a href="https://arxiv.org/abs/2401.16521">Link</a>.</p>
+                                <a class="awardlink" href="https://arxiv.org/abs/2401.16521">
+                                    <h2>Validation, Robustness, and Accuracy of Perturbation-based Sensitivity Analysis Methods for Time-Series Deep Learning Models</h2>   
+                                </a>
+                                <p>Accepted to the AAAI-24 Undergraduate Consortium. The 38th Annual AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada. 2024 February 27.</p>
                             </div>
                         </div>
                         <div class="publication-box">
                             <img src="/pics/img/interpretingSA2.png" alt="Publication Logo 5" class="box-logo">
                             <div class="box-content">
-                                <h2>Interpreting Time Series Transformer Models and Sensitivity Analysis of Population Age Groups to COVID-19 Infections</h2>
-                                <p>Accepted to the AI for Time-Series workshop. The 38th Annual AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada. 2024 February 27. Available from: <a href="https://arxiv.org/abs/2401.15119">Link</a>.</p>
+                                <a class="awardlink" href="https://arxiv.org/abs/2401.15119">
+                                    <h2>Interpreting Time Series Transformer Models and Sensitivity Analysis of Population Age Groups to COVID-19 Infections</h2>
+                                </a>
+                                <p>Accepted to the AI for Time-Series workshop. The 38th Annual AAAI Conference on Artificial Intelligence (AAAI-24), Vancouver, Canada. 2024 February 27.</p>
                             </div>
                         </div>
                     </div>
