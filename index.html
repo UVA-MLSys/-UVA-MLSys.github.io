@@ -52,6 +52,11 @@
                 margin: 20px 0;
                 padding: 20px;
             }
+
+            .sectioncontainer {
+                margin: 20px 0;
+                padding: 20px;
+            }
     
             h1, h2 {
                 text-align: center;
@@ -113,7 +118,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                background-color: #eaeaea; /* Default grey banner */
+                background-color: #f2f2f2; /* Default grey banner */
                 padding: 1% 0; /* Padding top and bottom for each row */
             }
 
@@ -149,7 +154,7 @@
             }
 
             .collaborators-row:nth-child(odd) {
-                background-color: #d6d6d6; /* Different shade for alternating rows */
+                background-color: #f2f2f2; /* Different shade for alternating rows */
             }
     
             /* Navbar */
@@ -370,11 +375,23 @@
                 
             }
             /* General box styles for both awards and publications */
-            .award-box, .publication-box {
+            .award-box {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 border: 1px solid #eaeaea;
+                padding: 20px;
+                margin: 10px;
+                transition: box-shadow 0.3s;
+                background-color: #fff;
+                text-align: center;
+                max-width: 300px;
+            }
+
+            .publication-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 padding: 20px;
                 margin: 10px;
                 transition: box-shadow 0.3s;
@@ -439,7 +456,7 @@
             }
             .collaborator-group {
                 text-align: left;
-                background-color: #d6d6d6;
+                background-color: #f2f2f2;
                 margin: 0;
                 padding-left: 100px;
                 font-size: medium;
@@ -469,6 +486,23 @@
                 color: #6f6f6f;
             }
 
+            .subheading {
+                text-align-last: center;
+                font-size: small;
+                color: #333232;
+
+            }
+
+            .awardlink {
+                transition: color 0.3s;
+                text-decoration: none;
+                color: #000000;
+            }
+
+            .awardlink:hover {
+                color: #245c98;
+            }
+
     </style>
 </head>
 <body>
@@ -476,6 +510,7 @@
         <!-- <div class="navbar-title">Interpretable AI for Time-Series Models</div> -->
         <div class="logo">
             <img src="./pics/img/UVAdatascience.png" alt="Data Science Logo">
+            <img src="./pics/img/cslogo.png" alt="CS Logo" >
         </div>
         <div class="navbar-links">
             <a href="#projects">Projects</a>
@@ -573,11 +608,11 @@
     </div>
     
     <div class="container">
-        <h1 id="title">Interpretable AI for Time-Series Models</h1>
+        <h1 class="title">Interpretable AI for Time-Series Models</h1>
         <!-- Projects Row -->
         <div class="row" id="projects">
             <div class="card">
-                <a href="https://github.com/UVA-MLSys/gpce-covid" style="display: block; text-decoration: none; color: inherit;">
+                <!-- <a href="https://github.com/UVA-MLSys/gpce-covid" style="display: block; text-decoration: none; color: inherit;"> -->
                     <h2>Interpreting Spatio-Temporal patterns with Self-Attention</h2>
                     <p class="projectdescription">
                         This study uses the <i>Temporal Fusion Transformer</i> to 
@@ -587,14 +622,13 @@
                         By interpreting the model's learned patterns and 
                         using 2.5 years of socioeconomic and health data 
                         from 3,142 counties, this research provides valuable insights 
-                        to aid effective public health decision-making.
+                        to aid effective public health decision-making. <a href="https://uva-mlsys.github.io/gpce-covid/" class="read-more"> Read more </a>
                     </p>
-                    <div class="arrow">&rarr;</div>
-                </a>
+                <!-- </a> -->
             </div>
 
             <div class="card">
-                <a href="https://github.com/UVA-MLSys/COVID-19-age-groups" style="display: block; text-decoration: none; color: inherit;"></a>
+                <!-- <a href="https://github.com/UVA-MLSys/COVID-19-age-groups" style="display: block; text-decoration: none; color: inherit;"> -->
                 <h2>Interpreting Feature Interactions using Sensitivity Analysis</h2>
                 <p class="projectdescription"> This study uses eight recent local interpretation methods on 
                     six Transformer-based time series models, 
@@ -602,23 +636,21 @@
                     cases using three years of data from 3,142 US counties. When also
                     predicting the epidemic sensitivity to different age groups and compare the interpreted
                     sensitivity with ground truth. The framework is also tested on other datasets
-                    for broader applicability.
+                    for broader applicability. <a href="https://uva-mlsys.github.io/COVID-19-age-groups/" class="read-more">Read more</a>
                 </p>
-                <div class="arrow">&rarr;</div>
-                </a>
+                <!-- </a> -->
             </div>
 
             <div class="card">
-                <a href="https://github.com/UVA-MLSys/SA-Timeseries" style="display: block; text-decoration: none; color: inherit;"></a>
+                <!-- <a href="https://github.com/UVA-MLSys/SA-Timeseries" style="display: block; text-decoration: none; color: inherit;"> -->
                 <h2>Windowed Temporal Saliency Analysis for Multi-Horizon Time Series Forecasting</h2>
                 <p class="projectdescription"> Interpreting time series models is challenging due to the temporal dependencies between 
                     time steps and the changing significance of input features over time. This addresses these 
                     challenges by striving to provide clearer explanations of the feature interactions, 
                     and showcase the practical application of these interpretability techniques using 
-                    real-world datasets and cutting-edge deep learning models.
+                    real-world datasets and cutting-edge deep learning models. <a href="https://uva-mlsys.github.io/SA-Timeseries/" class="read-more">Read more</a>
                 </p>
-                <div class="arrow">&rarr;</div>
-                </a>
+                <!-- </a> -->
             </div>
         </div>
 
@@ -631,10 +663,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/J1LW2DPxuzM" title="Judy Fox, University of Virginia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="video-card">
-                <video width="400" height="315" controls>
-                    <source src="pics/img/DScovidanalysis.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BPQ-pgtPqRc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -742,7 +771,7 @@
                     <div class="collaborator-name">Tracy Hua</div>
                     <div class="collaborator-details">Systems Engineering, DS</div>
                 </div>
-                <div class="collaborator">
+                <!-- <div class="collaborator">
                     <img src="./pics/img/" alt="Xin Sun">
                     <div class="collaborator-name">Xin Sun</div>
                     <div class="collaborator-details">CS</div>
@@ -751,9 +780,8 @@
                     <img src="./pics/img/" alt="Ryan Goudjil">
                     <div class="collaborator-name">Ryan Goudjil</div>
                     <div class="collaborator-details">CS, Chemistry</div>
-                </div>
-                <div class="collaborator">
-                </div>
+                </div> -->
+                
             </div>
 
             <div class="container">
@@ -763,8 +791,9 @@
                         <div class="award-box">
                             <img src="/pics/img/nsf.png" alt="Award Logo 1" class="box-logo">
                             <div class="box-content">
-                                <h2>Third Place prize in the 2023 IEEE ICDH Conference</h2>
-                                <p>NSF Student Research Award: <a href="https://conferences.computer.org/icdh/2023/student_awards.html">Link</a></p>
+                                <a class="awardlink" href="https://conferences.computer.org/icdh/2023/student_awards.html">
+                                    <h2 class="awardlink">Third Place prize in the 2023 IEEE ICDH Conference</h2>
+                                </a>
                                 <div class="collaborator-row">
                                     <img src="/pics/img/single - Md Khairul Islam.JPG" alt="Student Photo">
                                     <div class="collaborator-info">
@@ -777,22 +806,25 @@
                         <div class="award-box">
                             <img src="/pics/img/nsfproceedings.png" alt="Award Logo 2" class="box-logo">
                             <div class="box-content">
-                                <h2>Temporal Dependencies and Spatio-Temporal Patterns of Time Series Models</h2>
-                                <p><a href="https://ojs.aaai.org/index.php/AAAI/article/view/30396">Link</a></p>
+                                <a class="awardlink" href="https://ojs.aaai.org/index.php/AAAI/article/view/30396">
+                                    <h2 class="awardlink">Temporal Dependencies and Spatio-Temporal Patterns of Time Series Models</h2>
+                                </a>
                             </div>
                         </div>
                         <div class="award-box">
                             <img src="/pics/img/nsfproceedings.png" alt="Award Logo 3" class="box-logo">
                             <div class="box-content">
-                                <h2>Validation, Robustness, and Accuracy of Perturbation-Based Sensitivity Analysis Methods for Time-Series Deep Learning Models</h2>
-                                <p><a href="https://ojs.aaai.org/index.php/AAAI/article/view/30559">Link</a></p>
+                                <a class="awardlink" href="https://ojs.aaai.org/index.php/AAAI/article/view/30559">
+                                    <h2 class="awardlink">Validation, Robustness, and Accuracy of Perturbation-Based Sensitivity Analysis Methods for Time-Series Deep Learning Models</h2>
+                                </a>                    
                             </div>
                         </div>
                         <div class="award-box">
                             <img src="/pics/img/ieee.png" alt="Award Logo 4" class="box-logo">
                             <div class="box-content">
-                                <h2>Interpreting County-Level COVID-19 Infections using Transformer and Deep Learning Time Series Models in IEEE Library</h2>
-                                <p><a href="https://ieeexplore.ieee.org/abstract/document/10224685">Link</a></p>
+                                <a class="awardlink" href="https://ieeexplore.ieee.org/abstract/document/10224685">
+                                    <h2 class="awardlink">Interpreting County-Level COVID-19 Infections using Transformer and Deep Learning Time Series Models in IEEE Library</h2>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -800,8 +832,8 @@
             </div>
             
                 <h1 id="publications" class="title">Publications</h1>
-                <h3>Referred Journal Article Citations/References</h3>
-                <div class="section-container">
+                <h3 class="subheading">Referred Journal Article Citations/References</h3>
+                <div class="sectioncontainer">
                     <div class="row">
                         <div class="publication-box">
                             <img src="/pics/img/interpretingSA.png" alt="Publication Logo 1" class="box-logo">
@@ -841,7 +873,7 @@
                     </div>
                 </div>
             
-                <h3>Software Packages developed or updated</h3>
+                <h3 class="subheading">Software Packages developed or updated</h3>
                 <div class="section-container">
                     <div class="row">
                         <div class="publication-box">
@@ -875,7 +907,7 @@
                     </div>
                 </div>
             
-                <h3>Additional Research Media Published</h3>
+                <h3 class="subheading">Additional Research Media Published</h3>
                 <div class="section-container">
                     <div class="row">
                         <div class="publication-box">
