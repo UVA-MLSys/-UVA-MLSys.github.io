@@ -43,7 +43,6 @@
                 max-width: 1500px;
                 margin: 70px auto;
                 padding: 20px;
-                background-color: #fff;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
     
@@ -228,7 +227,6 @@
             /* Slideshow container */
             .slideshow-container {
                 position: relative;
-                margin: auto;
                 max-width: 100%;
                 display: flex;
                 justify-content: center;
@@ -259,13 +257,13 @@
             /* Position the "next button" to the right */
             .next {
                 right: 0;
-                color: #181818;
+                color: white;
                 border-radius: 3px 0 0 3px;
             }
 
             .prev {
                 left: 0;
-                color:#181818;  
+                color:white;  
             }
 
             /* On hover, add a black background color with a little bit of transparency */
@@ -448,7 +446,11 @@
             }
 
             .publicationparagraph {
-                line-height: 23px;
+                line-height: 1.6; /* Increase line height for better readability */
+                text-align: justify; /* Justify text to create a block-like appearance */
+                padding: 10px 0; /* Add padding to create space between paragraphs */
+                font-family: Arial, sans-serif; /* Ensure a readable font */
+                padding-left: 30px;
             }
 
             .box-content p {
@@ -536,6 +538,14 @@
                 color: #499bf1;
             }
 
+            .mySlides img {
+                width: 1300px;
+                height: 700px; /* Adjust as needed */
+                object-fit: cover; /* This maintains the aspect ratio of the images */
+            }
+
+
+
     </style>
 </head>
 <body>
@@ -558,19 +568,19 @@
         <div class="container">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="./pics/img/slide1.jpg" style="width:80%">
+                    <img src="./pics/img/slide1.jpg"  >
                 </div>
                 <div class="mySlides fade">
-                    <img src="./pics/img/slide2.png" style="width:100%">
+                    <img src="./pics/img/slide2.png" >
                 </div>
                 <div class="mySlides fade">
-                    <img src="./pics/img/slide3.png" style="width:100%">
+                    <img src="./pics/img/slide3.png" >
                 </div>
                 <div class="mySlides fade">
-                    <img src="./pics/img/slide4.png" style="width:60%">
+                    <img src="./pics/img/slide4.png">
                 </div>
                 <div class="mySlides fade">
-                    <img src="./pics/img/slide5.jpg" style="width:60%">
+                    <img src="./pics/img/slide5.jpg" >
                 </div>
                 
                 <!-- Add more slides as needed -->
@@ -772,7 +782,7 @@
                                 <a class="awardlink" href="https://ieeexplore.ieee.org/abstract/document/10224685">
                                     <h2>Interpreting County-Level COVID 19 Infections using Transformer and Deep Learning Time Series Models</h2>
                                 </a>
-                                <p class="publicationparagraph">Proceedings of The IEEE International Conference on Digital Health (ICDH). This work won the NSF Student Research Competition Award (3rd Prize) July 2023. 2023 July 02; Volume 1 (Issue 1)</p>
+                                <p class="publicationparagraph">Proceedings of The IEEE International Conference on Digital Health (ICDH). This work won the NSF Student Research Competition Award (3rd Place Prize) July 2023. 2023 July 02; Volume 1 (Issue 1)</p>
                                 <p class="publicationparagraph">
                                     Deep Learning for Time-series plays a key role in AI for healthcare. To predict the progress of infectious disease outbreaks and demonstrate clear population-level impact, more granular analyses are urgently needed that control for important and potentially confounding county-level socioeconomic and health factors. 
                                     We forecast US county-level COVID-19 infections using the Temporal Fusion Transformer (TFT). We focus on heterogeneous time-series deep learning model prediction while interpreting the complex spatiotemporal features learned from the data. 
