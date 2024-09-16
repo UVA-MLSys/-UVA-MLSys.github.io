@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interpretable AI for Time-Series Models</title>
+    <title>Interpretable AI for Spatio-Temporal Models</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!DOCTYPE html>
     <html lang="en">
@@ -136,6 +136,7 @@
                 border-radius: 50%; /* Make the image circular */
                 object-fit: cover; /* Ensure the image covers the container */
                 object-position: center; /* Center the image within the container */
+
             }
 
             .collaborator-info {
@@ -475,6 +476,8 @@
 
             .nsflogo {
                 margin-right: 10px; /* Add space to the right of the logo */
+                height: 120px;
+                width: auto;
             }
 
             #title {
@@ -571,7 +574,12 @@
                 position: absolute; /* Position it to center vertically */
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%); /* Perfect centering */
+                transform: translate(-48%, -50%); /* Perfect centering */
+                word-spacing: 20px;
+                letter-spacing: 0.3rem;
+            }
+            .fox-image {
+                transform: scale(0.90); /* Reduce size to 4/5 of the original */
             }
 
 
@@ -685,7 +693,7 @@
     </div>
     
     <div class="container">
-        <h1 class="title">Interpretable AI for Time-Series Models</h1>
+        <h1 class="title">Interpretable AI for Spatio-Temporal Models</h1>
         <!-- Projects Row -->
         <div class="row" id="projects">
             <div class="card">
@@ -955,7 +963,7 @@
                 <h2 class="collaborator-group">Professors</h2>
                 <div class="collaborators-row">
                     <div class="collaborator">
-                        <img src="./pics/img/JFox2 - Judy Fox.png" alt="Judy Fox">
+                        <img class="fox-image" src="./pics/img/JFox2 - Judy Fox.png" alt="Judy Fox">
                         <div class="collaborator-name">Dr. Judy Fox</div>
                         <div class="collaborator-details">Data Science, Computer Science </div>
                     </div>
